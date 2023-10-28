@@ -1,0 +1,83 @@
+/* Réinitialisation des marges et des rembourrages */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles de l'en-tête Tesla */
+.tesla-header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.main-menu ul {
+    list-style-type: none;
+}
+
+.main-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Styles supplémentaires pour le reste de votre site */
+
+.tesla-header {
+    /* ... Autres styles ... */
+    transition: background-color 0.3s; /* Transition de couleur de fond fluide */
+}
+
+.tesla-header:hover {
+    background-color: #f60; /* Changement de couleur de fond au survol */
+    transition: background-color 0.3s; /* Transition de couleur de fond fluide au survol */
+}
+
+.logo img {
+    /* ... Autres styles ... */
+    transition: transform 0.3s; /* Transition d'échelle fluide au survol */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Agrandissement de l'image au survol */
+    transition: transform 0.3s; /* Transition d'échelle fluide au survol */
+}
+
+/* Style du menu de navigation mobile (à ajouter pour la conception responsive) */
+@media (max-width: 768px) {
+    .main-menu {
+        display: none; /* Masque le menu par défaut */
+        position: absolute;
+        top: 80px; /* Ajustez la position verticale au besoin */
+        right: 20px; /* Ajustez la position horizontale au besoin */
+        background-color: #000;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .main-menu.active {
+        display: block; /* Affiche le menu lorsque nécessaire */
+    }
+
+    .main-menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-menu ul li a {
+        font-size: 18px; /* Ajustez la taille de police pour la version mobile */
+    }
+}
